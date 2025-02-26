@@ -3,7 +3,7 @@ package Pertemuan4;
 public class StrukturList {
     Node HEAD = null;
 
-    public void addTail(int data) {
+    public void addTail(double data) {
         Node curNode = null;
         Node posNode = null;
         Node newNode = new Node(data);
@@ -30,7 +30,7 @@ public class StrukturList {
         }
     }
     
-    public void addHead (int data){
+    public void addHead (double data){
         Node newNode = new Node(data);
         if (isEmpty()){
             HEAD = newNode;
@@ -40,21 +40,21 @@ public class StrukturList {
         }
     }
     
-    public void addMid(int data, int position) {
+    public void addMid(double data, int position) {
         Node newNode = new Node(data);
         
-        if (head == null) {
-            head = newNode;
+        if (HEAD == null) {
+            HEAD = newNode;
             return;
         }
         
         if (position == 1) { // Tambah di awal
-            newNode.next = head;
-            head = newNode;
+            newNode.next = HEAD;
+            HEAD = newNode;
             return;
         }
         
-        Node curNode = head;
+        Node curNode = HEAD;
         Node posNode = null;
         int i = 1;
         
@@ -69,6 +69,4 @@ public class StrukturList {
             newNode.next = curNode;
         }
     }
-
-    
 }
