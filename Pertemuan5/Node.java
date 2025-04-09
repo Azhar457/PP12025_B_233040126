@@ -1,10 +1,10 @@
-package Pertemuan4;
+package Pertemuan5;
 
 class Node {
-        double data;
+        int data;
         Node next;
 
-        Node(double data) {
+        Node(int data) {
             this.data = data;
             this.next = null;
         }

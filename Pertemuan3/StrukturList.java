@@ -2,7 +2,6 @@ package Pertemuan3;
 
 public class StrukturList {
     Node HEAD = null;
-
     public void addTail(int data) {
         Node curNode = null;
         Node posNode = null;

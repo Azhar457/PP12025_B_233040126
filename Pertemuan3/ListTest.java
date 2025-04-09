@@ -5,8 +5,8 @@ public class ListTest {
     public static void main(String[] args) {
        StrukturList list1a = new StrukturList();
        list1a.addTail(3);
-       list1a.addTail(2);
-       list1a.addTail(1);
+       list1a.addTail(4);
+       list1a.addTail(5);
        
        System.out.print("Element: ");
        list1a.displayElement();
