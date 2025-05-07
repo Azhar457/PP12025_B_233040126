@@ -171,5 +171,15 @@ public class StrukturList {
 		System.out.println(" ");
 		System.out.println("Jumlah Elemen List: " + jumlah);
 	}
-
+	
+	public void removaAll() {
+		Node curNode = HEAD;
+		while (curNode != null) {
+			Node nextNode = curNode.getNext();
+			dispose(curNode);
+			curNode = nextNode;
+		}
+		HEAD = null;
+		// System.out.println("List Kosong");
+	}
 }
