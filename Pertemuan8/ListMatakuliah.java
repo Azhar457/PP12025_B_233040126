@@ -4,7 +4,7 @@ public class ListMatakuliah {
 	Node HEAD = null;
 	public void addTail(Matakuliah data) {
 		Node curNode = null;
-		Node posNode = null;
+		// Node posNode = null;
 		Node newNode = new Node(data);
 		if (isEmpty()) {
 			HEAD = newNode;
